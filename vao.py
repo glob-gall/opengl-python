@@ -28,6 +28,10 @@ class VAO:
         self.vaos['house'] = self.get_vao(
             program=self.program.programs['default'],
             vbo=self.vbo.vbos['house'])
+        # house2 vao
+        self.vaos['house2'] = self.get_vao(
+            program=self.program.programs['default'],
+            vbo=self.vbo.vbos['house2'])
 
     def get_vao(self, program, vbo):
         vao = self.ctx.vertex_array(program, [(vbo.vbo, vbo.format, *vbo.attribs)])
