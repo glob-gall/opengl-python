@@ -19,7 +19,7 @@ class Scene:
         #     for z in range(-n, n, s):
         #         add(Cube(app, pos=(x, -s, z)))
 
-        add(Cat(app, pos=(0, -5, -60)))
+        add(Cat(app, pos=(-0.5, -5, -60)))
         
         add(Road(app, pos=(0,-6,-10)))
         add(Road(app, pos=(0,-6,-41)))
@@ -48,6 +48,13 @@ class Scene:
         add(Grass(app, pos=(9,-5.5,-47)))
         add(Grass(app, pos=(9,-5.5,-62)))
         add(Grass(app, pos=(9,-5.5,-77)))
+        
+        add(Tree(app, pos=(-6,-5.2,-9)))
+        add(Tree(app, pos=(10,-5.2,-1)))
+        add(Tree(app, pos=(-4,-5.2,-4)))
+        add(Tree(app, pos=(-2,-5.2,-1)))
+        add(Tree(app, pos=(-13,-5.2,-8)))
+        add(Tree(app, pos=(-10,-5.2,-2)))
         
 
     def render(self):

@@ -36,6 +36,10 @@ class VAO:
         self.vaos['grass'] = self.get_vao(
             program=self.program.programs['default'],
             vbo=self.vbo.vbos['grass'])
+        # tree vao
+        self.vaos['tree'] = self.get_vao(
+            program=self.program.programs['default'],
+            vbo=self.vbo.vbos['tree'])
 
     def get_vao(self, program, vbo):
         vao = self.ctx.vertex_array(program, [(vbo.vbo, vbo.format, *vbo.attribs)])
