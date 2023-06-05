@@ -34,6 +34,21 @@ class Scene:
         add(House2(app, pos=(-7,-5,-32)))
         add(House2(app, pos=(-7,-5,-26)))
         add(House2(app, pos=(-7,-5,-18)))
+        
+        add(Grass(app, pos=(-10,-5.5,-3)))
+        add(Grass(app, pos=(-10,-5.5,-17)))
+        add(Grass(app, pos=(-10,-5.5,-32)))
+        add(Grass(app, pos=(-10,-5.5,-47)))
+        add(Grass(app, pos=(-10,-5.5,-62)))
+        add(Grass(app, pos=(-10,-5.5,-77)))
+        
+        add(Grass(app, pos=(9,-5.5,-3)))
+        add(Grass(app, pos=(9,-5.5,-17)))
+        add(Grass(app, pos=(9,-5.5,-32)))
+        add(Grass(app, pos=(9,-5.5,-47)))
+        add(Grass(app, pos=(9,-5.5,-62)))
+        add(Grass(app, pos=(9,-5.5,-77)))
+        
 
     def render(self):
         for obj in self.objects:

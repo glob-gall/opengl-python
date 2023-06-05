@@ -13,6 +13,7 @@ class Texture:
         self.textures['road'] = self.get_texture(path='objects/road/road.jpg')
         self.textures['house'] = self.get_texture(path='objects/house/texture-1.jpg')
         self.textures['house2'] = self.get_texture(path='objects/house/texture-2.jpg')
+        self.textures['grass'] = self.get_texture(path='objects/grass/10450_Rectangular_Grass_Patch_v1_Diffuse.jpg')
 
 
     def get_texture(self, path):
