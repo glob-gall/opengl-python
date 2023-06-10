@@ -1,9 +1,10 @@
 
-from orientado.Tree import Tree
-from orientado.Cat import Cat
-from orientado.Road import Road
-from orientado.Grass import Grass
-from orientado.House import House,House2
+from models.Tree import Tree
+from models.Cat import Cat
+from models.Road import Road
+from models.Grass import Grass
+from models.House import House,House2
+from models.Cube import Cube
 
 class Scene:
     def __init__(self, app):
@@ -17,11 +18,6 @@ class Scene:
     def load(self):
         app = self.app
         add = self.add_object
-
-        # n, s = 30, 3
-        # for x in range(-n, n, s):
-        #     for z in range(-n, n, s):
-        #         add(Cube(app, pos=(x, -s, z)))
 
         add(Cat(app, pos=(-0.5, -5, -60)))
         

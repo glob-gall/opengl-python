@@ -1,12 +1,12 @@
 import numpy as np
 from base import BaseVBO
 import pywavefront
-from orientado.Tree import TreeVBO
-from orientado.Cat import CatVBO
-from orientado.House import HouseVBO,House2VBO
-from orientado.Road import RoadVBO
-from orientado.Cube import CubeVBO
-from orientado.Grass import GrassVBO
+from models.Tree import TreeVBO
+from models.Cat import CatVBO
+from models.House import HouseVBO,House2VBO
+from models.Road import RoadVBO
+from models.Cube import CubeVBO
+from models.Grass import GrassVBO
 #virtual buffer object
 class VBO:
     def __init__(self, ctx):
