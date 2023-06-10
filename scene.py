@@ -1,5 +1,9 @@
-from model import *
 
+from orientado.Tree import Tree
+from orientado.Cat import Cat
+from orientado.Road import Road
+from orientado.Grass import Grass
+from orientado.House import House,House2
 
 class Scene:
     def __init__(self, app):
