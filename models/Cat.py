@@ -5,7 +5,7 @@ import numpy as np
 
 class Cat(BaseModel):
     def __init__(self, app, vao_name='cat', tex_id='cat',
-                 pos=(0, 0, 0), rot=(-90, 0, 0), scale=(1, 1, 1)):
+                 pos=(0, 0, 0), rot=(-90, 0, 0), scale=(0.3,0.3,0.3)):
         super().__init__(app, vao_name, tex_id, pos, rot, scale)
         self.on_init()
 
@@ -37,7 +37,7 @@ class CatVBO(BaseVBO):
         self.attribs = ['in_texcoord_0', 'in_normal', 'in_position']
 
     def get_vertex_data(self):
-        objs = pywavefront.Wavefront('objects/cat/20430_Cat_v1_NEW.obj', cache=True, parse=True)
+        objs = pywavefront.Wavefront('objects/gato/12221_Cat_v1_l3.obj', cache=True, parse=True)
         obj = objs.materials.popitem()[1]
         vertex_data = obj.vertices
         vertex_data = np.array(vertex_data, dtype='f4')

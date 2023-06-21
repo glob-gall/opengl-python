@@ -23,6 +23,7 @@ class Scene:
         
         add(Road(app, pos=(0,-6,-10)))
         add(Road(app, pos=(0,-6,-41)))
+        add(Road(app, pos=(0,-6,-71)))
         add(House(app, pos=(6,-5,-48)))
         add(House(app, pos=(6,-5,-40)))
         add(House(app, pos=(6,-5,-32)))
